@@ -6,10 +6,19 @@
   font-size: 10px;
 }
 
+body {
+  background-image: url(../img/spaceBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
 .flex,
 .wrapper,
 .planetInfo,
-.right {
+.right,
+.planetFactsWrapper {
   display: flex;
   flex-direction: column;
 }
@@ -17,22 +26,19 @@
 .wrapper {
   width: 100vw;
   text-align: center;
-  
-  background-image: url(../img/spaceBackground.jpg);
-  background-position: center;
-  background-size: cover;
-  align-items: center;
 
+  align-items: center;
 }
 
-h1
-{
-  margin: 150px 0 100px;
+.wrapper > h1 {
+  padding: 150px 100px;
+}
+
+h1 {
   font-size: 3rem;
 }
 
-.planetWrapper
-{
+.planetWrapper {
   width: 80%;
   background-color: #3c3d63;
   border-radius: 8px;
@@ -41,46 +47,75 @@ h1
   box-shadow: -7px 7px 5px 0px rgba(255, 255, 255, 0.253);
 }
 
-.planetWrapper > img
-{
+.planetWrapper > img {
   margin-top: -100px;
 }
 
-.planetInfo
-{
+.planetInfo {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.planetInfo > span
-{
+.planetInfo > span {
   font-size: 5rem;
   color: rgba(255, 255, 255, 0.479);
 }
 
-.right
-{
+.right {
   text-align: left;
   gap: 10px;
-  
 }
 
-.right > span
-{
+.right > span {
   font-size: 3rem;
   font-weight: bold;
 }
 
-.right a
-{
+.right a {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 600;
   color: #fbffd2;
 }
 
-.right a:hover
-{
+.right a:hover {
   color: rgb(143, 143, 255);
 }
+
+.planetFactsWrapper {
+  height: 100vh;
+  text-align: left;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px 25px;
+  background-position: center;
+  background-size: cover;
+}
+
+.planetFactsWrapper img {
+  width: 350px;
+}
+
+.planetFactsWrapper > p {
+  font-size: 2.2rem;
+  width: 90%;
+  padding: 15px;
+  background-color: #3c3d636e;
+  border-radius: 8px;
+}
+
+.backBtn {
+  background-color: #3c3d63;
+  box-shadow: -4px 5px 0.5px 0px rgba(255, 255, 255, 0.315);
+
+  font-size: 1.75rem;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  align-self: flex-start;
+  margin-top: 50px;
+}
+
