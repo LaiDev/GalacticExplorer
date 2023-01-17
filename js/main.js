@@ -64,7 +64,37 @@ let loadVenus = () => {
   });
 };
 
-let loadEarth = () => {};
+let loadEarth = () => {
+    clearDom();
+
+    let planetWrapper = document.createElement("div");
+    planetWrapper.classList.add("planetFactsWrapper");
+    wrapper.append(planetWrapper);
+  
+    let earth = document.createElement("img");
+    earth.src = "../img/Earth.svg";
+  
+    planetWrapper.append(earth);
+  
+    let planetName = document.createElement("h1");
+    planetName.innerText = "Earth";
+    planetWrapper.append(planetName);
+  
+    let planetInfo = document.createElement("p");
+    planetInfo.innerText =
+      "Our home planet is the third planet from the Sun, and the only place we know of so far that’s inhabited by living things. \n \n While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.";
+  
+    planetWrapper.append(planetInfo);
+  
+    let backBtn = document.createElement("a");
+    backBtn.innerText = "< Back";
+    backBtn.classList.add("backBtn");
+    planetWrapper.append(backBtn);
+  
+    backBtn.addEventListener("click", () => {
+      location.reload();
+    });
+};
 
 let loadMars = () => {};
 
