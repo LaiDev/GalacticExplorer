@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-size: 10px;
+}
+
+.flex,
+.wrapper,
+.planetInfo,
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 100vw;
+  text-align: center;
+  
+  background-image: url(../img/spaceBackground.jpg);
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+
+}
+
+h1
+{
+  margin: 150px 0 100px;
+  font-size: 3rem;
+}
+
+.planetWrapper
+{
+  width: 80%;
+  background-color: #3c3d63;
+  border-radius: 8px;
+  margin-bottom: 100px;
+  padding: 25px;
+}
+
+.planetWrapper > img
+{
+  margin-top: -100px;
+}
+
+.planetInfo
+{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.planetInfo > span
+{
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.479);
+}
+
+.right
+{
+  text-align: left;
+  gap: 10px;
+  
+}
+
+.right > span
+{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.right a
+{
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fbffd2;
+}
+
+.right a:hover
+{
+  color: rgb(143, 143, 255);
+}
