@@ -96,7 +96,37 @@ let loadEarth = () => {
     });
 };
 
-let loadMars = () => {};
+let loadMars = () => {
+    clearDom();
+
+    let planetWrapper = document.createElement("div");
+    planetWrapper.classList.add("planetFactsWrapper");
+    wrapper.append(planetWrapper);
+  
+    let mars = document.createElement("img");
+    mars.src = "../img/Mars.svg";
+  
+    planetWrapper.append(mars);
+  
+    let planetName = document.createElement("h1");
+    planetName.innerText = "Mars";
+    planetWrapper.append(planetName);
+  
+    let planetInfo = document.createElement("p");
+    planetInfo.innerText =
+      "​ Mars is the fourth planet from the Sun. A dusty, cold, desert world with a very thin atmosphere. Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past. \n \n Mars is one of the most explored bodies in our solar system, and it's the only planet where we've sent rovers to roam the alien landscape.";
+  
+    planetWrapper.append(planetInfo);
+  
+    let backBtn = document.createElement("a");
+    backBtn.innerText = "< Back";
+    backBtn.classList.add("backBtn");
+    planetWrapper.append(backBtn);
+  
+    backBtn.addEventListener("click", () => {
+      location.reload();
+    });
+};
 
 let loadJupiter = () => {};
 
