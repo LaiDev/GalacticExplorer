@@ -13,9 +13,10 @@
 
 ### Design Created Using Figma
 
-![image](https://user-images.githubusercontent.com/70034760/213294817-2b7be7b1-cc02-43ae-bfa8-d42c5ee25649.png)
+![image](https://user-images.githubusercontent.com/70034760/213298872-87514e8f-f764-4842-8f50-a22f2ec09eba.png)
 
-![image](https://user-images.githubusercontent.com/70034760/213294981-69ecc965-a7b1-4553-941a-92aa6f99d861.png)
+![image](https://user-images.githubusercontent.com/70034760/213298805-4c1b6d55-1c74-4c33-83d3-87bcd18e72b4.png)
+
 
 ### Attribution
 
