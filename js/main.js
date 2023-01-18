@@ -9,6 +9,7 @@ let loadMercury = () => {
 
   let mercury = document.createElement("img");
   mercury.src = "../img/Mercury.svg";
+  mercury.alt = "Mercury";
   mercury.classList.add("mercuryImg");
   planetWrapper.append(mercury);
 
@@ -41,6 +42,7 @@ let loadVenus = () => {
 
   let venus = document.createElement("img");
   venus.src = "../img/Venus.svg";
+  venus.alt = "Venus";
 
   planetWrapper.append(venus);
 
@@ -73,6 +75,7 @@ let loadEarth = () => {
 
   let earth = document.createElement("img");
   earth.src = "../img/Earth.svg";
+  earth.alt = "Earth";
 
   planetWrapper.append(earth);
 
@@ -105,6 +108,7 @@ let loadMars = () => {
 
   let mars = document.createElement("img");
   mars.src = "../img/Mars.svg";
+  mars.alt = "Mars";
 
   planetWrapper.append(mars);
 
@@ -137,6 +141,7 @@ let loadJupiter = () => {
 
   let jupiter = document.createElement("img");
   jupiter.src = "../img/Jupiter.svg";
+  jupiter.alt = "Jupiter";
 
   planetWrapper.append(jupiter);
 
@@ -169,6 +174,7 @@ let loadSaturn = () => {
 
   let saturn = document.createElement("img");
   saturn.src = "../img/Saturn.svg";
+  saturn.alt = "Saturn";
 
   planetWrapper.append(saturn);
 
@@ -201,6 +207,7 @@ let loadUranus = () => {
 
   let uranus = document.createElement("img");
   uranus.src = "../img/Uranus.svg";
+  uranus.alt = "Uranus";
 
   planetWrapper.append(uranus);
 
@@ -233,6 +240,7 @@ let loadNeptune = () => {
 
   let neptune = document.createElement("img");
   neptune.src = "../img/Neptune.svg";
+  neptune.alt = "Neptune";
 
   planetWrapper.append(neptune);
 
