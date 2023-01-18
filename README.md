@@ -3,7 +3,7 @@
 
 
 ## Galactic Explorer is a website that allows users to learn information about planets in the Solar System
-[Live Project](https://laidev.github.io/SpaceWebApp/)
+[Live Project](https://galacticexplorer.netlify.app)
 
 ### How It's made
 
