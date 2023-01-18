@@ -18,7 +18,8 @@ body {
 .wrapper,
 .planetInfo,
 .right,
-.planetFactsWrapper {
+.planetFactsWrapper,
+.planetRow {
   display: flex;
   flex-direction: column;
 }
@@ -38,7 +39,13 @@ h1 {
   font-size: 3rem;
 }
 
+.planetRow {
+  width: 90%;
+  align-items: center;
+}
+
 .planetWrapper {
+  max-width: 700px;
   width: 80%;
   background-color: #3c3d63;
   border-radius: 8px;
@@ -170,5 +177,38 @@ h1 {
   .backBtn:hover {
     color: rgb(183, 183, 255);
     font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  .planetRow {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+  }
+  .planetWrapper {
+    width: 45%;
+  }
+
+  .planetFactsWrapper > p {
+    width: 50%;
+    font-size: 2.7rem;
+  }
+
+  .backBtn {
+    max-width: 250px;
+    font-size: 2rem;
+  }
+
+  .backBtn:hover {
+    color: rgb(183, 183, 255);
+    font-size: 2.1rem;
   }
 }
